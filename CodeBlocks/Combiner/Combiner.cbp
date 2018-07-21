@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Compiler" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Combiner - Debug" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Combiner" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-pedantic-errors" />
+			<Add option="-Wall" />
+			<Add directory="..\..\..\..\Shared\Cpp\String\" />
+			<Add directory="..\..\..\..\Shared\Cpp\Win32GUI\" />
+			<Add directory="..\..\..\..\Shared\Cpp\Win32GUI\Application" />
+			<Add directory="..\..\..\..\Shared\Cpp\Win32GUI\BasicGUI" />
+			<Add directory="..\..\..\..\Shared\Cpp\Win32GUI\Controls" />
+			<Add directory="..\..\..\..\Shared\Cpp\File" />
+			<Add directory="..\..\..\..\Shared\Cpp\Data" />
+			<Add directory="Combiner\" />
+			<Add directory="GUI\" />
+			<Add directory="Resources\" />
+			<Add directory="..\..\..\..\Shared\Cpp\Calc" />
+			<Add directory="..\..\..\..\Shared\Cpp\StrokeFont" />
+		</Compiler>
+		<Linker>
+			<Add library="gdi32" />
+			<Add library="user32" />
+			<Add library="kernel32" />
+			<Add library="ComCtl32" />
+		</Linker>
+		<Unit filename="Combiner\FreePCB.cpp" />
+		<Unit filename="Combiner\FreePCB.h" />
+		<Unit filename="Combiner\Netlist.cpp" />
+		<Unit filename="Combiner\Netlist.h" />
+		<Unit filename="Combiner\Types.h" />
+		<Unit filename="GUI\FrmGetQuantity.cpp" />
+		<Unit filename="GUI\FrmGetQuantity.h" />
+		<Unit filename="GUI\FrmMainWindow.cpp" />
+		<Unit filename="GUI\FrmMainWindow.h" />
+		<Unit filename="Resources\Manifest.xml" />
+		<Unit filename="Resources\resource.h" />
+		<Unit filename="Resources\resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="main.cpp" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Calc\JCalc.cpp" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Calc\JCalc.h" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Data\JData.cpp" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Data\JData.h" />
+		<Unit filename="..\..\..\..\Shared\Cpp\File\JFile.cpp" />
+		<Unit filename="..\..\..\..\Shared\Cpp\File\JFile.h" />
+		<Unit filename="..\..\..\..\Shared\Cpp\String\JString.cpp" />
+		<Unit filename="..\..\..\..\Shared\Cpp\String\JString.h" />
+		<Unit filename="..\..\..\..\Shared\Cpp\StrokeFont\StrokeFont.cpp" />
+		<Unit filename="..\..\..\..\Shared\Cpp\StrokeFont\StrokeFont.h" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Win32GUI\Application\winApplication.cpp" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Win32GUI\Application\winApplication.h" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Win32GUI\BasicGUI\winObject.cpp" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Win32GUI\BasicGUI\winObject.h" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Win32GUI\BasicGUI\winWindow.cpp" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Win32GUI\BasicGUI\winWindow.h" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Win32GUI\Controls\winButton.cpp" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Win32GUI\Controls\winButton.h" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Win32GUI\Controls\winControl.cpp" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Win32GUI\Controls\winControl.h" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Win32GUI\Controls\winDateTime.cpp" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Win32GUI\Controls\winDateTime.h" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Win32GUI\Controls\winEdit.cpp" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Win32GUI\Controls\winEdit.h" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Win32GUI\Controls\winList.cpp" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Win32GUI\Controls\winList.h" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Win32GUI\Controls\winMemo.cpp" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Win32GUI\Controls\winMemo.h" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Win32GUI\Controls\winProgressBar.cpp" />
+		<Unit filename="..\..\..\..\Shared\Cpp\Win32GUI\Controls\winProgressBar.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
